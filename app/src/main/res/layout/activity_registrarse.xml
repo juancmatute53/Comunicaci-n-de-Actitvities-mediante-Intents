@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegistrarseActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="335dp"
+            android:layout_height="38dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.043" android:id="@+id/linearLayout5">
+        <TextView
+                android:text="Registrar Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:textAlignment="center"
+                android:textSize="24sp" android:textStyle="bold" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="126dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.061"
+            android:id="@+id/linearLayout6">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/registro" android:id="@+id/imageView"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="332dp"
+            android:layout_height="228dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.245" android:id="@+id/linearLayout7">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextTextPersonName" android:hint="Usuario"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextTextPersonName2" android:hint="Nombre"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextTextPersonName3" android:hint="Apellido"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextTextPassword" android:hint="Contraseña"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="275dp"
+            android:layout_height="71dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.797" android:id="@+id/linearLayout8">
+        <Button
+                android:text="Registrar Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="334dp"
+            android:layout_height="82dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout8">
+        <CheckBox
+                android:text="Aceptar terminos y condiciones."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/checkBox3" android:textAlignment="textStart"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
